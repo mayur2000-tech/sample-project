@@ -52,7 +52,7 @@
       <media-gallery
         id="MediaGallery-{{ section.id }}"
         role="region"
-        {% if section.settings.enable_sticky_info %}
+        {% if section.settings.enable_sticky_info %}bu
           class="product__media-gallery"
         {% endif %}
         aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
@@ -291,6 +291,7 @@
                 {%- endunless -%}
               {%- endfor -%}
             </ul>
+            <h1>mayur laptops</h1>
             <button
               type="button"
               class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
